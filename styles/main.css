@@ -1,0 +1,366 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 100%;
+    background-image: url(../images/paper.gif);
+}
+
+body {
+    background-color: white;
+    font-size: 100%;
+    width: 95%;
+    height: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 5px solid steelblue;
+    box-shadow: 0 0 12px grey;
+}
+
+header {
+    border-bottom: 2px solid steelblue;
+    background-image: linear-gradient(white, lightsteelblue);
+}
+
+header img {
+    float: left;
+    width: 140px;
+    min-width: 70px;
+}
+
+h1 {
+    margin-left: .82em;
+    margin-top: 30px;
+}
+
+header h2 {
+    text-indent: 60px;
+    color: steelblue;
+    text-shadow: 2px 2px 8px grey;
+    font-size: 250%;
+    margin-top: 15px;
+}
+
+/* Horizontal Navigation Bar - w3 float and block style */
+
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+  }
+  
+  #nav_menu ul li {
+    float: left;
+  }
+  
+  #nav_menu ul li a {
+    display: block;
+    color: navy;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 1.5em;
+    text-decoration: none;
+  }
+  
+  #nav_menu ul li a:hover {
+    background-color: steelblue;
+    color: white;
+  }
+
+  #nav_menu #about {
+      float: right;
+  }
+
+/* Horizontal Navigation Bar - Inline NAV bar style 
+#nav_menu ul{
+    list-style: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    border-top:1px solid black;
+    border-bottom: 1px solid black;
+    background-color: lightblue;
+}
+
+#nav_menu ul li{
+    display: inline;
+    padding: 5px 25px;
+    border-right: 3px solid black;
+}
+
+#nav_menu #last {
+    border: none;
+}
+
+#nav_menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: navy;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    color: white;
+}
+*/
+
+/* closing of bar */
+
+
+/* Vertical Navigation List */
+#nav_list ul{
+    list-style: none;
+    text-align: center;
+}
+
+#nav_list ul li{
+    width: 84%;
+}
+
+#nav_list ul li a{
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightblue;
+    padding: .5em;
+    border: 2px solid black;
+    color: navy;
+}
+
+#nav_list ul li a:hover{
+    background-color: steelblue;
+    color: white;
+}
+/* closing of list */
+
+
+
+header h3 {
+    text-indent: 60px;
+    font-size: 150%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+main {
+    clear: both;
+}
+
+section p {
+    margin-left: 1.68em;
+    margin-top: 12px;
+    margin-bottom: 30px;
+
+}
+
+section blockquote {
+    font-size: 85%;
+    color: navy;
+    margin-left: 3.92em;
+    margin-right: 2.8em;
+    margin-bottom: 15px;
+    border-left: 3px solid maroon;
+    padding-left: .28em;
+    background-color: lightgray;
+}
+
+section h2 {
+    margin-left: 1.18em;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    margin-left: 0em;
+}
+
+section a {
+    margin: 1.68em;
+}
+
+/* unvisited link */
+main a:link {
+    color: maroon;
+}
+
+/* visited link */
+main a:visited {
+    color: maroon;
+}
+
+/* mouse over link */
+main a:hover {
+    color: steelblue;
+}
+
+/* unvisited link */
+aside a:link {
+    color: steelblue;
+}
+
+/* visited link */
+aside a:visited {
+    color: steelblue;
+}
+
+/* mouse over link */
+aside a:hover {
+    color: maroon;
+}
+
+aside li {
+    margin: 10px 0;
+    margin-left: 1.51em; 
+    margin-bottom: 12px;
+}
+
+aside h2 {
+    margin-left: .3em;
+    margin-bottom: 20px;
+    color: maroon;
+    padding-left: .84em;
+}
+
+footer {
+    font-size: 65%;
+    text-align: center;
+    background: steelblue;
+    color: white;
+    padding: 1.4em;
+    font-weight: bold;
+    font-variant: small-caps;
+    clear: both;
+}
+
+.homesection {
+    width: 50%;
+    float: left;
+    padding-right: .84em;
+    padding-left: .84em;
+}
+
+.sidebar {
+    width: 25%;
+    padding-right: 1.12em;
+    padding-left: 1.12em;
+    padding-top: 35px;
+}
+
+#firstcol {
+    float: left;
+}
+
+#firstcol #nav_list h2 {
+    text-align: center;
+    padding-right: 20px;
+}
+
+#thirdcol {
+    float: right;
+}
+
+#thirdcol h2 {
+    text-align: center;
+    padding-right: 9px;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    html {
+        background-image: none;
+    }
+
+    body {
+        box-shadow: none;
+        border: none;
+        font-size: 90%;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+   
+    header h2 {
+        font-size: 200%;
+    }
+
+    header h3 {
+        font-size: 125%;
+    }
+   
+    .homesection {
+        float: none;
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        float: none;
+    }
+    
+    .thirdcol {
+        width: 100%;
+        float: none;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    #mobilemenu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: lightblue !important;
+    }
+
+    .slicknav_menu ul li a {
+        color: white; 
+        font-weight: bold;
+    }
+
+    .slicknav_menu a {
+        background-color: steelblue;
+    }
+}
+
+
+
+@media only screen and (max-width: 479px) {
+
+    header img {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    header h2 {
+        text-align: center;
+        padding-right: 50px;
+    }
+
+    header h3 {
+        text-align: center;
+        padding-right: 40px;
+    }
+}
+
